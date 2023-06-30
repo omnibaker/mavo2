@@ -1,38 +1,58 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.omnibaker</groupId>
-	<artifactId>mavolib</artifactId>
-	<version>0.1</version>
-	<packaging>aar</packaging>
-
-	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<android-maven-plugin.version>4.2.0</android-maven-plugin.version>
-	</properties>
 
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>com.simpligility.maven.plugins</groupId>
 				<artifactId>android-maven-plugin</artifactId>
-				<version>${android-maven-plugin.version}</version>
+				<version>4.1.0</version>
 				<extensions>true</extensions>
+				<configuration>
+					<sign>
+						<debug>false</debug>
+					</sign>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 
-	<dependencies>
-		<!-- Add your dependencies here -->
-		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>2.10.1</version>
-		</dependency>
-	</dependencies>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.omnibaker</groupId>
+	<artifactId>mavolib</artifactId>
+	<version>1.0.0</version>
+	<packaging>aar</packaging>
+	<description>Some rando library</description>
 
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<url>https://github.com/omnibaker/mavo2</url>
+		<connection>scm:git:https://github.com/omnibaker/mavo2.git</connection>
+		<developerConnection>scm:git:https://github.com/omnibaker/mavo2.git</developerConnection>
+	</scm>
+
+	<dependencies>
+		<!-- Define your dependencies here if required -->
+	</dependencies>
 </project>
+
+
+<!--<build>
+	<plugins>
+		<plugin>
+			<groupId>com.simpligility.maven.plugins</groupId>
+			<artifactId>android-maven-plugin</artifactId>
+			<version>${android-maven-plugin.version}</version>
+			<extensions>true</extensions>
+		</plugin>
+	</plugins>
+</build>-->
