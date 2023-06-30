@@ -48,19 +48,6 @@
 		</repository>
 	</distributionManagement>
 	
-	<dependencies>
-		<!-- Define your dependencies here if required -->
-	</dependencies>
 </project>
 
 
-<!--<build>
-	<plugins>
-		<plugin>
-			<groupId>com.simpligility.maven.plugins</groupId>
-			<artifactId>android-maven-plugin</artifactId>
-			<version>${android-maven-plugin.version}</version>
-			<extensions>true</extensions>
-		</plugin>
-	</plugins>
-</build>-->
