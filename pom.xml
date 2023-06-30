@@ -40,6 +40,14 @@
 		<developerConnection>scm:git:https://github.com/omnibaker/mavo2.git</developerConnection>
 	</scm>
 
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/omnibaker/mavo2</url>
+		</repository>
+	</distributionManagement>
+	
 	<dependencies>
 		<!-- Define your dependencies here if required -->
 	</dependencies>
